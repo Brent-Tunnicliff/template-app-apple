@@ -7,3 +7,4 @@ Template for my iOS projects.
 - Run `rbenv install` to install the expected ruby version. This is defined in the `.ruby-version` file.
 - Install Bundler with `gem install bundler`.
 - Install ruby gems with `bundle install`. These are defined in the `Gemfile` file.
+- Install [swift-format](https://github.com/apple/swift-format) with `brew install swift-format`
