@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Brent-Tunnicliff/swift-format-plugin",
       "state" : {
-        "revision" : "fd9c2a047d44144cd79b89ec6ce4e1f74e32aa49",
-        "version" : "1.0.0"
+        "revision" : "5a82d08df0b2011212ee786122ab99e90230bf09",
+        "version" : "1.0.1"
       }
     },
     {

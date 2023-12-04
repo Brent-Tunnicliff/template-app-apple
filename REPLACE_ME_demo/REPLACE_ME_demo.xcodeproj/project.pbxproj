@@ -235,7 +235,8 @@
 			mainGroup = 84952FC12B18B1F80041241D;
 			packageReferences = (
 				84952FF82B18B22D0041241D /* XCLocalSwiftPackageReference "../REPLACE_ME" */,
-				84BB6F132B1B4F2100BC638D /* XCRemoteSwiftPackageReference "swift-format-plugin" */,
+				84BB6F1B2B1C0AA200BC638D /* XCLocalSwiftPackageReference "../rename_template" */,
+				84D214EA2B1DF3350041A14E /* XCRemoteSwiftPackageReference "swift-format-plugin" */,
 			);
 			productRefGroup = 84952FCB2B18B1F80041241D /* Products */;
 			projectDirPath = "";
@@ -655,6 +656,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../REPLACE_ME;
 		};
+		84BB6F1B2B1C0AA200BC638D /* XCLocalSwiftPackageReference "../rename_template" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../rename_template;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -664,6 +669,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		84D214EA2B1DF3350041A14E /* XCRemoteSwiftPackageReference "swift-format-plugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Brent-Tunnicliff/swift-format-plugin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

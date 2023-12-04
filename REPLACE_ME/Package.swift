@@ -21,6 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Brent-Tunnicliff/swift-format-plugin", .upToNextMajor(from: "1.0.0")),
+        .package(path: "../rename_template"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

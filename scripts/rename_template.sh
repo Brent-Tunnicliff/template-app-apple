@@ -26,7 +26,6 @@ function process_file() {
     	return
 	fi
 
-	
 	if [[ "$FILE_NAME" != *"$NAME_TO_REPLACE"* ]]; then
     	return
 	fi

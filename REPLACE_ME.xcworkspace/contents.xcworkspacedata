@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:rename_template">
+   </FileRef>
+   <FileRef
       location = "group:REPLACE_ME_demo/REPLACE_ME_demo.xcodeproj">
    </FileRef>
    <FileRef
