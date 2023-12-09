@@ -1,3 +1,7 @@
+# WORK IN PROGRESS
+
+This template is still in initial development, may not work and subject to change.
+
 # template-ios
 
 Template for me to quickly spin up iOS projects.
