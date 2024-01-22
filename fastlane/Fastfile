@@ -10,5 +10,10 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
+default_platform(:ios)
+
 # Common fastlane lanes.
-import_from_git(url: 'https://github.com/Brent-Tunnicliff/fastlane')
+# import_from_git(url: 'https://github.com/Brent-Tunnicliff/fastlane')
+
+# Use local path for debugging.
+import("../../fastlane/Fastfile")
