@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "AB3BA6BE-5E1A-4438-BD9C-E0ACD8842BEC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:REPLACE_ME.xcodeproj",
+          "identifier" : "84952FC92B18B1F80041241D",
+          "name" : "REPLACE_ME"
+        }
+      ]
+    },
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "UNIT_TESTS_RUNNING"
+      }
+    ],
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:REPLACE_ME.xcodeproj",
+        "identifier" : "84952FDA2B18B1F90041241D",
+        "name" : "REPLACE_METests"
+      }
+    }
+  ],
+  "version" : 1
+}

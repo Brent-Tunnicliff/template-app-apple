@@ -3,7 +3,7 @@
 import SwiftUI
 
 @main
-struct REPLACE_ME_demoApp: App {
+struct REPLACE_MEApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -2,10 +2,9 @@
 
 This template is still in initial development, may not work and subject to change.
 
-# template-ios
+# template-app-apple
 
-Template for me to quickly spin up iOS projects.
-Delete what you don't need.
+Template for me to quickly spin up Apple applications.
 
 ## Dev Setup
 
@@ -14,4 +13,3 @@ Delete what you don't need.
 - Run `rbenv install` to install the expected ruby version. This is defined in the `.ruby-version` file.
 - Install Bundler with `gem install bundler`.
 - Install ruby gems with `bundle install`. These are defined in the `Gemfile` file.
-- Install [swift-format](https://github.com/apple/swift-format) with `brew install swift-format`

@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "29A5A332-F332-4728-9FB8-368AB50BF958",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:REPLACE_ME.xcodeproj",
+          "identifier" : "84952FC92B18B1F80041241D",
+          "name" : "REPLACE_ME"
+        }
+      ]
+    },
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "UI_TESTS_RUNNING"
+      }
+    ],
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:REPLACE_ME.xcodeproj",
+        "identifier" : "84952FE42B18B1F90041241D",
+        "name" : "REPLACE_MEUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

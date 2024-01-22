@@ -2,7 +2,7 @@
 
 import XCTest
 
-final class REPLACE_ME_demoTests: XCTestCase {
+final class REPLACE_METests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
