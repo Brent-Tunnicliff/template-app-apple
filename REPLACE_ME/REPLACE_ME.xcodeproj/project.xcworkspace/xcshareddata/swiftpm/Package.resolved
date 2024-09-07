@@ -1,4 +1,5 @@
 {
+  "originHash" : "b2d1b28bf81314e8ba88d0ee8018b2dbc8426a3c1b0c543252cc68ca2341c8cf",
   "pins" : [
     {
       "identity" : "swift-argument-parser",
@@ -32,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Brent-Tunnicliff/swift-format-plugin",
       "state" : {
-        "revision" : "5a82d08df0b2011212ee786122ab99e90230bf09",
-        "version" : "1.0.1"
+        "revision" : "fa41b6754a1a1cee1d6c1dc487e751c1c75914d7",
+        "version" : "1.0.2"
       }
     },
     {
@@ -55,5 +56,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
