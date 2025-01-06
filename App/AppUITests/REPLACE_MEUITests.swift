@@ -1,7 +1,8 @@
-// Copyright © 2023 Brent Tunnicliff <brent@tunnicliff.dev>
+// Copyright © 2025 Brent Tunnicliff <brent@tunnicliff.dev>
 
 import XCTest
 
+@MainActor
 final class REPLACE_MEUITests: XCTestCase {
 
     override func setUpWithError() throws {

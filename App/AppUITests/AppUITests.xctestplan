@@ -12,26 +12,26 @@
     "codeCoverage" : {
       "targets" : [
         {
-          "containerPath" : "container:REPLACE_ME.xcodeproj",
+          "containerPath" : "container:App.xcodeproj",
           "identifier" : "84952FC92B18B1F80041241D",
-          "name" : "REPLACE_ME"
+          "name" : "App"
         }
       ]
     },
-    "commandLineArgumentEntries" : [
-      {
-        "argument" : "UI_TESTS_RUNNING"
-      }
-    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:App.xcodeproj",
+      "identifier" : "84952FE42B18B1F90041241D",
+      "name" : "AppUITests"
+    },
     "testExecutionOrdering" : "random",
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:REPLACE_ME.xcodeproj",
+        "containerPath" : "container:App.xcodeproj",
         "identifier" : "84952FE42B18B1F90041241D",
-        "name" : "REPLACE_MEUITests"
+        "name" : "AppUITests"
       }
     }
   ],
