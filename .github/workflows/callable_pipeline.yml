@@ -1,0 +1,26 @@
+# Copyright © 2025 Brent Tunnicliff <brent@tunnicliff.dev>
+
+name: Callable Pipeline
+
+on:
+  workflow_call:
+    inputs:
+      destination:
+        description: 'The destination used for xcodebuild commands'
+        default: 'macOS'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_16.app
+      - name: Build demo
+        run: xcodebuild build -scheme "App" -destination "${{ inputs.destination }}" -configuration "Debug" -skipPackagePluginValidation CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Run Unit tests
+        run: xcodebuild test -scheme "App" -destination "${{ inputs.destination }}"
+      - name: Run UI tests
+        run: xcodebuild test -scheme "AppUITests" -destination "${{ inputs.destination }}"
