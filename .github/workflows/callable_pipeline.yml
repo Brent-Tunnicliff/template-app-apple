@@ -6,8 +6,8 @@ on:
   workflow_call:
     inputs:
       destination:
-        description: 'The destination used for xcodebuild commands'
-        default: 'macOS'
+        description: "The destination used for xcodebuild commands"
+        default: "macOS"
         required: true
         type: string
 
@@ -18,9 +18,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set Xcode version
         run: sudo xcode-select -s /Applications/Xcode_16.app
-      - name: Build demo
-        run: xcodebuild build -scheme "App" -destination "${{ inputs.destination }}" -configuration "Debug" -skipPackagePluginValidation CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Build app
+        run: xcodebuild build
+          -scheme "App"
+          -destination "${{ inputs.destination }}"
+          -configuration "Debug"
+          -skipPackagePluginValidation
+          CODE_SIGN_IDENTITY=""
+          CODE_SIGNING_REQUIRED=NO
       - name: Run Unit tests
-        run: xcodebuild test -scheme "App" -destination "${{ inputs.destination }}"
+        run: xcodebuild test
+          -scheme "App"
+          -destination "${{ inputs.destination }}"
+          -skipPackagePluginValidation
       - name: Run UI tests
-        run: xcodebuild test -scheme "AppUITests" -destination "${{ inputs.destination }}"
+        run: xcodebuild test
+          -scheme "AppUITests"
+          -destination "${{ inputs.destination }}"
+          -skipPackagePluginValidation
