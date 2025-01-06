@@ -3,7 +3,7 @@
 import XCTest
 
 @MainActor
-final class REPLACE_MEUITestsLaunchTests: XCTestCase {
+final class LaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
