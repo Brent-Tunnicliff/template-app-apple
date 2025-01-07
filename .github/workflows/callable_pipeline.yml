@@ -26,17 +26,27 @@ jobs:
           -skipPackagePluginValidation
           CODE_SIGN_IDENTITY=""
           CODE_SIGNING_REQUIRED=NO
-      - name: Run Unit tests
-        run: xcodebuild test
+      - name: Build Unit tests
+        run: xcodebuild build-for-testing
           -scheme "App"
           -destination "${{ inputs.destination }}"
+          -configuration "Debug"
+          -skipPackagePluginValidation
+          CODE_SIGN_IDENTITY=""
+          CODE_SIGNING_REQUIRED=NO
+      - name: Run Unit tests
+        run: xcodebuild test-without-building
+          -scheme "App"
+          -destination "${{ inputs.destination }}"
+      - name: Build UI tests
+        run: xcodebuild build-for-testing
+          -scheme "AppUITests"
+          -destination "${{ inputs.destination }}"
+          -configuration "Debug"
           -skipPackagePluginValidation
           CODE_SIGN_IDENTITY=""
           CODE_SIGNING_REQUIRED=NO
       - name: Run UI tests
-        run: xcodebuild test
+        run: xcodebuild test-without-building
           -scheme "AppUITests"
           -destination "${{ inputs.destination }}"
-          -skipPackagePluginValidation
-          CODE_SIGN_IDENTITY=""
-          CODE_SIGNING_REQUIRED=NO
