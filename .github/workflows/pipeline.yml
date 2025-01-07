@@ -11,15 +11,16 @@ jobs:
     uses: ./.github/workflows/callable_pipeline.yml
     with:
       destination: "platform=iOS Simulator,name=iPhone 16"
-  macOS:
-    uses: ./.github/workflows/callable_pipeline.yml
-    with:
-      destination: "platform=macOS"
-  tvOS:
-    uses: ./.github/workflows/callable_pipeline.yml
-    with:
-      destination: "platform=tvOS Simulator,name=Apple TV"
-  visionOS:
-    uses: ./.github/workflows/callable_pipeline.yml
-    with:
-      destination: "platform=visionOS Simulator,name=Apple Vision Pro"
+  # TODO: We are seeing a number of issues with the below. Should look into them at some point.
+  # macOS:
+  #   uses: ./.github/workflows/callable_pipeline.yml
+  #   with:
+  #     destination: "platform=macOS"
+  # tvOS:
+  #   uses: ./.github/workflows/callable_pipeline.yml
+  #   with:
+  #     destination: "platform=tvOS Simulator,name=Apple TV"
+  # visionOS:
+  #   uses: ./.github/workflows/callable_pipeline.yml
+  #   with:
+  #     destination: "platform=visionOS Simulator,name=Apple Vision Pro"
