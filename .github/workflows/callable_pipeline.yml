@@ -31,8 +31,12 @@ jobs:
           -scheme "App"
           -destination "${{ inputs.destination }}"
           -skipPackagePluginValidation
+          CODE_SIGN_IDENTITY=""
+          CODE_SIGNING_REQUIRED=NO
       - name: Run UI tests
         run: xcodebuild test
           -scheme "AppUITests"
           -destination "${{ inputs.destination }}"
           -skipPackagePluginValidation
+          CODE_SIGN_IDENTITY=""
+          CODE_SIGNING_REQUIRED=NO
