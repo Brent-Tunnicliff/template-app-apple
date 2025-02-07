@@ -11,7 +11,7 @@ on:
         required: true
         type: string
 jobs:
-  build:
+  pipeline:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
