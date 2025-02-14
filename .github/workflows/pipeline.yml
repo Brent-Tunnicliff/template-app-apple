@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  package:
+  app:
     uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@wip
     strategy:
       matrix:
