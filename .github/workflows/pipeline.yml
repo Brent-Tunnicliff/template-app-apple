@@ -11,20 +11,8 @@ jobs:
     uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@wip
     strategy:
       matrix:
-        platform: ["iOS", "macOS", "tvOS", "watchOS", "visionOS"]
-        skip_tests: [true, false]
-        exclude:
-          - platform: "iOS"
-            skip_tests: true
-          - platform: "macOS"
-            skip_tests: true
-          - platform: "tvOS"
-            skip_tests: true
-          - platform: "watchOS"
-            skip_tests: false
-          - platform: "visionOS"
-            skip_tests: true
+        platform: ["iOS", "macOS", "tvOS", "visionOS"]
     with:
       platform: "${{ matrix.platform }}"
       scheme: "App"
-      skip_tests: ${{ matrix.skip_tests }}
+      skip_tests: false
