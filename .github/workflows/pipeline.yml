@@ -8,7 +8,7 @@ on:
 
 jobs:
   app:
-    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@wip
+    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
     strategy:
       matrix:
         platform: ["iOS", "macOS", "tvOS", "visionOS"]
