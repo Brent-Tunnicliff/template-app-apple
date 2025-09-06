@@ -66,7 +66,7 @@ jobs:
       - name: Build debug
         env:
           DESTINATION: ${{ steps.setup.outputs.destination }}
-          SCHEME: ${{ steps.scheme_config.scheme }}
+          SCHEME: ${{ steps.scheme_config.outputs.scheme }}
         run: xcodebuild build
           -project "$PROJECT"
           -scheme "$SCHEME"
@@ -79,7 +79,7 @@ jobs:
       - name: Build tests
         env:
           DESTINATION: ${{ steps.setup.outputs.destination }}
-          SCHEME: ${{ steps.scheme_config.scheme }}
+          SCHEME: ${{ steps.scheme_config.outputs.scheme }}
         run: xcodebuild build-for-testing
           -project "$PROJECT"
           -scheme "$SCHEME"
@@ -92,7 +92,7 @@ jobs:
         env:
           DESTINATION: ${{ steps.setup.outputs.destination }}
           RESULTS_BUNDLE_PATH: ${{ steps.setup.outputs.test_results_path }}
-          SCHEME: ${{ steps.scheme_config.scheme }}
+          SCHEME: ${{ steps.scheme_config.outputs.scheme }}
         run: xcodebuild test-without-building
           -project "$PROJECT"
           -scheme "$SCHEME"
@@ -113,7 +113,7 @@ jobs:
       - name: Build release
         env:
           DESTINATION: ${{ steps.setup.outputs.destination }}
-          SCHEME: ${{ steps.scheme_config.scheme }}
+          SCHEME: ${{ steps.scheme_config.outputs.scheme }}
         run: xcodebuild build
           -project "$PROJECT"
           -scheme "$SCHEME"
