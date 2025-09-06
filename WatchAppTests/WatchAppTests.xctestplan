@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "3AE5191A-9B9A-4DE4-B6B6-80B25A63BFE0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:App.xcodeproj",
+      "identifier" : "84A393272E6C6DED00B6C52C",
+      "name" : "WatchApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:App.xcodeproj",
+        "identifier" : "84A393332E6C6DEF00B6C52C",
+        "name" : "WatchAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

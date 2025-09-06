@@ -18,12 +18,14 @@
         }
       ]
     },
+    "defaultTestExecutionTimeAllowance" : 60,
     "targetForVariableExpansion" : {
       "containerPath" : "container:App.xcodeproj",
       "identifier" : "84952FC92B18B1F80041241D",
       "name" : "App"
     },
-    "testExecutionOrdering" : "random"
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
   },
   "testTargets" : [
     {
